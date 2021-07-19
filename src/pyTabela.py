@@ -7,7 +7,15 @@ LINHA = '-'
 QUEBRA = '\n'
 ESPACO = ' '
 class PyTabela(object):
-	"""AUTHOR: PABLO DUARTE SILVA E VITORIA KAROLINA FERREIRA SOUSA"""
+	"""AUTHOR: 
+		PABLO DUARTE SILVA E VITORIA KAROLINA FERREIRA SOUSA
+	COPYRIGHT:
+	 	"Copyright 2021, Por Duarte Silva & VKFS"
+	VERSION:
+		"1.0"
+	STATUS:
+		"Production"
+	"""
 	__slots__ = ["_campo", "_tabela", "_nColunas", "_maxLargura"]
 
 	def __init__(self) -> None:
