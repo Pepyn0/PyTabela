@@ -7,6 +7,7 @@ LINHA = '-'
 QUEBRA = '\n'
 ESPACO = ' '
 class PyTabela(object):
+	"""AUTHOR: PABLO DUARTE SILVA E VITORIA KAROLINA FERREIRA SOUSA"""
 	__slots__ = ["_campo", "_tabela", "_nColunas", "_maxLargura"]
 
 	def __init__(self) -> None:
@@ -70,7 +71,7 @@ class PyTabela(object):
 
 
 	def addCampos(self, campo: list) -> None:
-
+		"""DESCRIPTION: Função para adicionar o nome de cada coluna utilizada na tabela"""
 		try:
 			assert (len(campo) > 0)
 			self._nColunas = len(campo)
@@ -86,6 +87,8 @@ class PyTabela(object):
 
 
 	def addLinha(self, linha: list) -> None:
+		"""DESCRIPTION: Usado para adicionar as linhas da tabela com todos os campos adicionados na
+		função anterior"""
 		try:
 			assert len(linha) == self._nColunas
 			for i in range(self._nColunas):
@@ -98,6 +101,7 @@ class PyTabela(object):
 
 
 	def saveTabela(self, nomeArquivo: str) -> None:
+		"""DESCRIPTION: É usado para salvar a tabela após preenchimento da mesma"""
 		try:
 			arquivo = open(nomeArquivo, 'w', newline='', encoding='utf-8')
 		except:
@@ -111,6 +115,7 @@ class PyTabela(object):
 		arquivo.close()
 
 	def loadTabela(self, nomeArquivo: str) -> None:
+		"""DESCRIPTION: Função utilizada para carregamento de dados de arquivos existentes """
 		try:
 			arquivo = open(nomeArquivo, encoding='utf-8')
 		except:
