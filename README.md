@@ -7,14 +7,14 @@ Uma biblioteca com o intuito de gerar tabelas automaticamente.
 ### Instalação via pip:
 
 ```sh
-    python -m pip install -U PyTabela
+python -m pip install -U PyTabela
 ```
 ## Como Usar
 
 ### Importação
 ```python
-from PyTabela import PyTabela
-x = PyTabela()
+from pyTabela import pyTabela
+x = pyTabela.PyTabela()
 ```
 ### Adição dos campos
 ```python
@@ -27,7 +27,7 @@ x.addLinha([1, "Pablo", "Silva"])
 
 Voce pode adicionar uma linha a qualquer momento, mas é necessario adicionar o nome dos campos primeiramente com `addCampos`.
 ```python
-x = PyTabela()
+x = pyTabela.PyTabela()
 x.addCampos(["id", "nome", "sobrenome"])
 x.addLinha([1, "Pablo", "Silva"])
 x.addLinha([2, "Vitória", "Karolina"])
